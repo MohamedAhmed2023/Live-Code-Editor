@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Live Code Editor</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Live Code Editor</h1>
+    </nav>
+    <div class="content">
+      <div class="html">
+        <h3>HTML Code</h3>
+        <div id="html-code">
+          <textarea oninput="showContent()" name="" id="html"></textarea>
+        </div>
+      </div>
+      <div class="css">
+        <h3>CSS Code</h3>
+        <div id="css-code">
+          <textarea oninput="showContent()" name="" id="css"></textarea>
+        </div>
+      </div>
+      <div class="js">
+        <h3>JS Code</h3>
+        <div id="js-code">
+          <textarea oninput="showContent()" name="" id="js"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="result">
+      <iframe id="result" src="" frameborder="0"></iframe>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
